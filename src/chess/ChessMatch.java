@@ -225,10 +225,10 @@ public class ChessMatch {
         placeNewPiece('g', 8, new Knight(board, Color.BLACK));
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
 
-//        for (int i = 'a'; i <= 'h'; i++) {
-//            placeNewPiece((char) i, 7, new Pawn(board, Color.BLACK));
-//
-//        }
+        for (int i = 'a'; i <= 'h'; i++) {
+            placeNewPiece((char) i, 7, new Pawn(board, Color.BLACK));
+
+        }
 
     }
 
