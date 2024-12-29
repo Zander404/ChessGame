@@ -13,11 +13,16 @@ public class Knight extends ChessPiece {
 
     @Override
     public String toString() {
-        return "N";
+        if (getColor() == Color.BLACK) {
+            return "♘";
+
+        } else {
+            return "♞";
+        }
     }
 
     private boolean canMove(Position position) {
-        ChessPiece p = (ChessPiece)getBoard().piece(position);
+        ChessPiece p = (ChessPiece) getBoard().piece(position);
         return p == null || p.getColor() != getColor();
     }
 
